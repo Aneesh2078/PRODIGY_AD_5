@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Button to scan QR Code -->
+    <Button
+        android:id="@+id/scanButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan QR Code" />
+
+    <!-- TextView to display the scanned link -->
+    <TextView
+        android:id="@+id/scannedLinkTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Scanned link will appear here"
+        android:textSize="16sp" />
+
+    <!-- Button to navigate to the scanned link -->
+    <Button
+        android:id="@+id/navigateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Navigate to Link"
+        android:enabled="false" />
+
+    <!-- Button to copy the scanned link -->
+    <Button
+        android:id="@+id/copyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Copy Link to Clipboard"
+        android:enabled="false" />
+
+</LinearLayout>
